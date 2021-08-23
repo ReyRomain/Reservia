@@ -1,0 +1,43 @@
+/***** Le Logo Reservia *****/
+.logo-reservia
+{
+    max-height: 10%;
+    max-width: 10%;
+    min-height: 10%;
+    min-width:  6em;
+}
+
+/***** L'en tête de page *****/
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50%;
+}
+
+.filtre
+
+{
+    display: flex;
+    align-items: baseline;
+    margin-right: 5%;
+}
+
+.info
+{
+    display: flex;
+    align-items: center;
+}
+
+.recherche
+{
+    display: flex;
+    align-items: center;
+}
