@@ -14,14 +14,14 @@ header
     justify-content: space-between;
 }
 
-ul
+.links-header
 {
-    list-style-type: none;
     display: flex;
     justify-content: space-between;
     margin-right: 50%;
 }
 
+/***** Le groupe des filtres *****/
 .filtre
 
 {
@@ -40,4 +40,11 @@ ul
 {
     display: flex;
     align-items: center;
+}
+
+/***** Les listes à puces *****/
+
+ul
+{
+    list-style-type: none;
 }
