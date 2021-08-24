@@ -17,8 +17,7 @@ header
 .links-header
 {
     display: flex;
-    justify-content: space-between;
-    margin-right: 50%;
+    justify-content: flex-end;
 }
 
 /***** Le groupe des filtres *****/
