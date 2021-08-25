@@ -1,4 +1,19 @@
+/***** Générale *****/
+
+a
+{
+    text-decoration: none;
+}
+
+/***** Les étoiles et leurs couleurs *****/
+
+.grey
+{
+    color: grey;
+}
+
 /***** Le Logo Reservia *****/
+
 .logo-reservia
 {
     max-height: 10%;
@@ -7,22 +22,24 @@
     min-width:  6em;
 }
 
+
 /***** L'en tête de page *****/
+
 header
 {
     display: flex;
     justify-content: space-between;
 }
 
-.links-header
+ul
 {
+    list-style-type: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin-right: 50%;
 }
 
-/***** Le groupe des filtres *****/
 .filtre
-
 {
     display: flex;
     align-items: baseline;
@@ -40,10 +57,34 @@ header
     display: flex;
     align-items: center;
 }
+/***** Le premier bloc *****/
 
-/***** Les listes à puces *****/
-
-ul
+.bloc_1
 {
-    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-right: 60%;
+}
+
+/***** La partie du pied de page *****/
+
+footer
+{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(233, 230, 230);
+    height: 250px;
+    width: 100%;
+}
+
+.piedpage 
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25%;
+}
+
+.espace
+{
+    margin-bottom: 8%;
 }
