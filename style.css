@@ -1,29 +1,67 @@
 /***** Générale *****/
-
+html,body
+{
+    font-family: Raleway;
+}
 a
 {
     text-decoration: none;
 }
 
-/***** Les étoiles et leurs couleurs *****/
+.fontbold
+{
+    font-weight: bold;
+}
+
+/***** Les class pour leurs couleurs *****/
 
 .grey
 {
     color: grey;
 }
 
+.blue
+{
+    color: blue;
+}
+
+.black
+{
+    color: black;
+}
+
+/***** Les class pour leurs background-color *****/
+
+
+
+/***** BODY *****/
+body
+{
+    margin: 0;
+}
+.body1
+{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.body2
+{
+    margin: 0;
+}
 /***** Le Logo Reservia *****/
 
 .logo-reservia
 {
-    max-height: 10%;
-    max-width: 10%;
-    min-height: 10%;
-    min-width:  6em;
+    max-height: 50px;
+    max-width: 120px;
+    min-height: 50px;
+    min-width:  120px;
 }
 
 
 /***** L'en tête de page *****/
+
+/***** Le Header *****/
 
 header
 {
@@ -31,18 +69,65 @@ header
     justify-content: space-between;
 }
 
-ul
+header ul
 {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    margin-right: 50%;
+    justify-content: space-around;
+    margin: 0;
 }
+
+.links-header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 140px;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+.bordertop
+{
+    border-top: 1px solid blue;
+}
+
+/***** Fin du Header  *****/
+
+/***** Le formulaire de recherche *****/
+
+h1
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.recherche
+{
+    display: flex;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.bouton1
+{
+    background-color: blue;
+}
+
+/***** Le groupe des filtres *****/
 
 .filtre
 {
     display: flex;
-    align-items: baseline;
+}
+
+.filtre ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
     margin-right: 5%;
 }
 
@@ -52,11 +137,8 @@ ul
     align-items: center;
 }
 
-.recherche
-{
-    display: flex;
-    align-items: center;
-}
+/***** Fin de l'en tête de page *****/
+
 /***** Le premier bloc *****/
 
 .bloc_1
@@ -65,6 +147,40 @@ ul
     flex-direction: column;
     margin-right: 60%;
 }
+
+.imagebloc1
+{
+    width: 200px;
+    height: 200px;
+}
+
+/***** Fin du premier bloc *****/
+
+/***** Le deuxieme bloc *****/
+
+.bloc_2
+{
+
+}
+
+.imagebloc2
+{
+    width: 200px;
+    height: 200px;
+}
+
+/***** Fin du deuxieme bloc *****/
+
+
+/***** Le troisieme bloc *****/
+
+.imagebloc3
+{
+    width: 200px;
+    height: 200px;
+}
+
+/***** Fin du troisieme bloc *****/
 
 /***** La partie du pied de page *****/
 
