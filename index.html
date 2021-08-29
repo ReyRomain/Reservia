@@ -18,22 +18,30 @@
                 <img src="images/logo/Reservia@3x.png" alt="logo Reservia" class="logo-reservia" />
                 <nav>
                     <ul>
-                        <li class="links-header blue bordertop"><a href="#hebergement">Hébergements</a></li>
-                        <li class="links-header black"><a href="#activite">Activités</a></li>
-                        <li class="links-header blue fontbold"><a href="inscription.html">S'inscrire</a></li>
+                        <li class="links-header bordertop">
+                            <a href="#hebergement" class="black">Hébergements</a>
+                        </li>
+                        <li class="links-header bordertop">
+                            <a href="#activite" class="black">Activités</a>
+                        </li>
+                        <li class="links-header blue fontbold">
+                            <a href="inscription.html" class="">S'inscrire</a>
+                        </li>
                     </ul>
                 </nav>
             </header>
 
             <!-- Le formulaire de recherche -->
             <section>
-                <div>
+                <div class="">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou pleine nature</p>
                     <div class="recherche">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-map-marker-alt logo-geo"></i>
                         <form method="post" action="traitement.php">
-                            <input type="search" name="recherche" id="recherche" placeholder="Marseille, France" class="fontbold" />
+                            <input type="search" name="recherche" id="recherche" placeholder="Marseille, France" class="fontbold case-recherche" />
+                        </form>
+                        <form>
                             <input type="submit" value="Rechercher" class="bouton1" />
                         </form>
                     </div>
@@ -46,21 +54,21 @@
                 <h3>Filtres</h3>
                     <ul>
                         <li>
-                            <i class="fas fa-solid fa-money-bill-wave fontbold blue"></i> Economique
+                            <i class="fas fa-solid fa-money-bill-wave logo-filtre fontbold blue"></i><p class="txt-filtre"> Economique</p>
                         </li>
                         <li>
-                            <i class="fas fa-solid fa-child fontbold blue"></i> Familial
+                            <i class="fas fa-solid fa-child logo-filtre fontbold blue"></i><p class="txt-filtre"> Familial</p>
                         </li>
                         <li>
-                            <i class="fas fa-solid fa-heart fontbold blue"></i> Romantique
+                            <i class="fas fa-solid fa-heart logo-filtre fontbold blue"></i><p class="txt-filtre"> Romantique</p>
                         </li>
                         <li>
-                            <i class="fas fa-solid fa-dog fontbold blue"></i> Animaux autorisés
+                            <i class="fas fa-solid fa-dog logo-filtre fontbold blue"></i><p class="txt-filtre"> Animaux autorisés</p>
                         </li>
                     </ul>
                 </div>
                 <div class="info">
-                    <i class="fas fa-info"></i>
+                    <i class="fas fa-info logo-info blue"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
@@ -74,10 +82,10 @@
                         <h3>Auberge de la Cannebière</h3>
                         <p> Nuit à partir de<strong> 25 $</strong></p>
                         <div>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
                             <i class="fas fa-solid fa-star grey"></i>
                         </div>
                     </a>
@@ -86,11 +94,11 @@
                         <h3>Hôtel du port</h3>
                         <p>Nuit à partir de<strong> 52 $</strong></p>
                         <div>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
                         </div>
                     </a>
                     <a href="link.com">
@@ -98,10 +106,10 @@
                         <h3>Hôtel Les mouettes</h3>
                         <p>Nuit à partir de<strong> 76 $</strong></p>
                         <div>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
                             <i class="fas fa-solid fa-star grey"></i>
                         </div>
                     </a>
@@ -110,9 +118,9 @@
                         <h3>Hôtel de la mer</h3>
                         <p>Nuit à partir de<strong> 46 $</strong></p>
                         <div>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
                             <i class="fas fa-solid fa-star grey"></i>
                             <i class="fas fa-solid fa-star grey"></i>
                         </div>
@@ -122,10 +130,10 @@
                         <h3>Auberge Le Panier</h3>
                         <p>Nuit à partir de<strong> 23 $</strong></p>
                         <div>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
                             <i class="fas fa-solid fa-star grey"></i>
                         </div>
                     </a>
@@ -134,11 +142,11 @@
                         <h3>Hôtel chez Amina</h3>
                         <p>Nuit à partir de<strong> 96 $</strong></p>
                         <div>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
-                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
+                            <i class="fas fa-solid fa-star blue"></i>
                         </div>
                     </a>
                     <a href="afficherplus">Afficher plus</a>
@@ -154,11 +162,11 @@
                         <h2>Hôtel Le soleil du matin</h2>
                         <p>Nuit à partir de<strong> 128 $</strong></p>
                     <div>
-                        <i class="fas fa-solid fa-star"></i>
-                        <i class="fas fa-solid fa-star"></i>
-                        <i class="fas fa-solid fa-star"></i>
-                        <i class="fas fa-solid fa-star"></i>
-                        <i class="fas fa-solid fa-star"></i>
+                        <i class="fas fa-solid fa-star blue"></i>
+                        <i class="fas fa-solid fa-star blue"></i>
+                        <i class="fas fa-solid fa-star blue"></i>
+                        <i class="fas fa-solid fa-star blue"></i>
+                        <i class="fas fa-solid fa-star blue"></i>
                     </div>
                     </a>
                     <a href="link.com">
@@ -166,10 +174,10 @@
                         <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                         <p>Nuit à partir de<strong> 71 $</strong></p>
                     <div>
-                        <i class="fas fa-solid fa-star"></i>
-                        <i class="fas fa-solid fa-star"></i>
-                        <i class="fas fa-solid fa-star"></i>
-                        <i class="fas fa-solid fa-star"></i>
+                        <i class="fas fa-solid fa-star blue"></i>
+                        <i class="fas fa-solid fa-star blue"></i>
+                        <i class="fas fa-solid fa-star blue"></i>
+                        <i class="fas fa-solid fa-star blue"></i>
                         <i class="fas fa-solid fa-star grey"></i>
                     </div>
                     </a>
@@ -178,10 +186,10 @@
                         <h3>Hôtel Tout bleu et Blanc</h3>
                         <p>Nuit à partir de<strong> 68 $</strong></p>
                     <div>
-                        <i class="fas fa-solid fa-star"></i>
-                        <i class="fas fa-solid fa-star"></i>
-                        <i class="fas fa-solid fa-star"></i>
-                        <i class="fas fa-solid fa-star"></i>
+                        <i class="fas fa-solid fa-star blue"></i>
+                        <i class="fas fa-solid fa-star blue"></i>
+                        <i class="fas fa-solid fa-star blue"></i>
+                        <i class="fas fa-solid fa-star blue"></i>
                         <i class="fas fa-solid fa-star grey"></i>
                     </div>
                     </a>

@@ -2,6 +2,7 @@
 html,body
 {
     font-family: Raleway;
+    color: black;
 }
 a
 {
@@ -52,9 +53,9 @@ body
 
 .logo-reservia
 {
-    max-height: 50px;
+    max-height: 60px;
     max-width: 120px;
-    min-height: 50px;
+    min-height: 60px;
     min-width:  120px;
 }
 
@@ -87,9 +88,11 @@ header ul
     padding-top: 10px;
 }
 
-.bordertop
+.bordertop:hover
 {
     border-top: 1px solid blue;
+    margin: 0;
+    padding-top: 8px;
 }
 
 /***** Fin du Header  *****/
@@ -106,14 +109,39 @@ h1
 .recherche
 {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    border: 2px solid;
-    border-radius: 10px;
+    width: 400px;
+    height: 60px;
+    margin: 20px 0 20px 0;
+}
+
+.logo-geo
+{
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    font-size: 1em; /* <----- Ne pas oublier cette mesure ! */
+    width: 20px;
+    padding: 20px;
+}
+
+.case-recherche
+{
+    font-size: 1.1em;
+    border: 2px solid #F2F2F2;
+    width: 230px;
+    height: 55px;
+    padding: 20px;
 }
 
 .bouton1
 {
     background-color: blue;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
 }
 
 /***** Le groupe des filtres *****/
@@ -121,6 +149,7 @@ h1
 .filtre
 {
     display: flex;
+    align-items: center;
 }
 
 .filtre ul
@@ -131,10 +160,49 @@ h1
     margin-right: 5%;
 }
 
+.filtre li
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 20px;
+    padding-right: 20px;
+    border: 3px solid #F2F2F2;
+    border-radius: 25px;
+    width: auto;
+    height: 40px;
+}
+
+.filtre li:hover
+{
+    background-color: #DEEBFF;
+}
+
+.logo-filtre
+{
+    padding: 12px;
+    background-color: #DEEBFF;
+    border-radius: 25px;
+}
+
+.txt-filtre
+{
+    padding-left: 20px;
+}
+
 .info
 {
     display: flex;
     align-items: center;
+}
+
+.logo-info
+{
+    border: 3px solid #F2F2F2;
+    border-radius: 100%;
+    padding: 8px 10px 8px 10px;
+    margin-right: 10px;
 }
 
 /***** Fin de l'en tête de page *****/
@@ -157,11 +225,6 @@ h1
 /***** Fin du premier bloc *****/
 
 /***** Le deuxieme bloc *****/
-
-.bloc_2
-{
-
-}
 
 .imagebloc2
 {
