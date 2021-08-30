@@ -11,26 +11,25 @@
         <title>Réservia</title>
     </head>
     <body>
+        <!-- En tête de page -->
+        <header>
+            <img src="images/logo/Reservia@3x.png" alt="logo Reservia" class="logo-reservia" />
+            <nav>
+                <ul>
+                    <li class="links-header bordertop">
+                        <a href="#hebergement" class="black">Hébergements</a>
+                    </li>
+                    <li class="links-header bordertop">
+                        <a href="#activite" class="black">Activités</a>
+                    </li>
+                    <li class="links-header fontbold">
+                        <a href="#" class="blue">S'inscrire</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <!-- Le corps de la page -->
-        <div class="body1">
-            <!-- En tête de page -->
-            <header>
-                <img src="images/logo/Reservia@3x.png" alt="logo Reservia" class="logo-reservia" />
-                <nav>
-                    <ul>
-                        <li class="links-header bordertop">
-                            <a href="#hebergement" class="black">Hébergements</a>
-                        </li>
-                        <li class="links-header bordertop">
-                            <a href="#activite" class="black">Activités</a>
-                        </li>
-                        <li class="links-header blue fontbold">
-                            <a href="inscription.html" class="">S'inscrire</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-
+        <main>
             <!-- Le formulaire de recherche -->
             <section>
                 <div class="">
@@ -40,8 +39,6 @@
                         <i class="fas fa-map-marker-alt logo-geo"></i>
                         <form method="post" action="traitement.php">
                             <input type="search" name="recherche" id="recherche" placeholder="Marseille, France" class="fontbold case-recherche" />
-                        </form>
-                        <form>
                             <input type="submit" value="Rechercher" class="bouton1" />
                         </form>
                     </div>
@@ -54,16 +51,20 @@
                 <h3>Filtres</h3>
                     <ul>
                         <li>
-                            <i class="fas fa-solid fa-money-bill-wave logo-filtre fontbold blue"></i><p class="txt-filtre"> Economique</p>
+                            <i class="fas fa-solid fa-money-bill-wave logo-filtre fontbold blue"></i>
+                            <p class="txt-filtre"> Economique</p>
                         </li>
                         <li>
-                            <i class="fas fa-solid fa-child logo-filtre fontbold blue"></i><p class="txt-filtre"> Familial</p>
+                            <i class="fas fa-solid fa-child logo-filtre fontbold blue"></i>
+                            <p class="txt-filtre"> Familial</p>
                         </li>
                         <li>
-                            <i class="fas fa-solid fa-heart logo-filtre fontbold blue"></i><p class="txt-filtre"> Romantique</p>
+                            <i class="fas fa-solid fa-heart logo-filtre fontbold blue"></i>
+                            <p class="txt-filtre"> Romantique</p>
                         </li>
                         <li>
-                            <i class="fas fa-solid fa-dog logo-filtre fontbold blue"></i><p class="txt-filtre"> Animaux autorisés</p>
+                            <i class="fas fa-solid fa-dog logo-filtre fontbold blue"></i>
+                            <p class="txt-filtre"> Animaux autorisés</p>
                         </li>
                     </ul>
                 </div>
@@ -74,7 +75,7 @@
             </section>
             
             <!-- Le premier bloc -->
-            <section class="bloc_1">
+            <aside class="left-side">
                 <h2 id="hebergement">Hébergements à Marseille</h2>
                 <div class="">
                     <a href="link.com">
@@ -151,10 +152,10 @@
                     </a>
                     <a href="afficherplus">Afficher plus</a>
                 </div>
-            </section>
+            </aside>
 
             <!-- Le deuxieme bloc -->
-            <section class="bloc_2">
+            <aside class="right-side">
                 <h2>Les plus populaires</h2>
                 <div class="">
                     <a href="link.com">
@@ -194,11 +195,11 @@
                     </div>
                     </a>
                 </div>
-            </section>
+            </aside>
 
             <!-- Le troisieme bloc -->
-            <section class="bloc_3">
-            <h2 id="activite">Activités à Marseille</h2>
+            <section class="section-bottom">
+                <h2 id="activite">Activités à Marseille</h2>
                 <div class="">
                     <a href="link.com">
                         <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="imagebloc3" />
@@ -226,27 +227,25 @@
                     </a>
                 </div>
             </section>
-        </div>
+        </main>
         <!-- Le pied de page -->
-        <div class="body2">
-            <footer>
-                <div class="piedpage">
-                <h3>A propos</h3>
-                    <a href="fonctionnementdusite.com" class="espace">Fonctionnement du site</a>
-                    <a href="condition" class="espace">Conditions générales de vente</a>
-                    <a href="donne" class="espace">Données et confidentialité</a>
-                </div>
-                <div class="piedpage">
-                <h3>Nos hébergements</h3>
-                    <a href="charte" class="espace">Charte qualité</a>
-                    <a href="soumettre" class="espace">Soumettre votre hôtel</a>
-                </div>
-                <div class="piedpage">
-                <h3>Assistance</h3>
-                    <a href="centre" class="espace">Centre d'aide</a>
-                    <a href="contact" class="espace">Nous contacter</a>
-                </div>
-            </footer>
-        </div>
+        <footer>
+            <div class="piedpage">
+            <h3>A propos</h3>
+                <a href="fonctionnementdusite.com" class="espace">Fonctionnement du site</a>
+                <a href="condition" class="espace">Conditions générales de vente</a>
+                <a href="donne" class="espace">Données et confidentialité</a>
+            </div>
+            <div class="piedpage">
+            <h3>Nos hébergements</h3>
+                <a href="charte" class="espace">Charte qualité</a>
+                <a href="soumettre" class="espace">Soumettre votre hôtel</a>
+            </div>
+            <div class="piedpage">
+            <h3>Assistance</h3>
+                <a href="centre" class="espace">Centre d'aide</a>
+                <a href="contact" class="espace">Nous contacter</a>
+            </div>
+        </footer>
     </body>
 </html>
