@@ -4,6 +4,7 @@ html,body
     font-family: Raleway;
     color: black;
 }
+
 a
 {
     text-decoration: none;
@@ -16,27 +17,28 @@ a
 
 /***** Les class pour leurs couleurs *****/
 
-.grey
+.color-grey
 {
     color: grey;
 }
 
-.blue
+.color-blue
 {
-    color: blue;
+    color: #0065FC;
 }
 
-.black
+.links-black
 {
     color: black;
 }
 
-.black:hover
+.links-black:hover
 {
-    color: blue;
+    color: #0065FC;
 }
 
 /***** BODY *****/
+
 body
 {
     margin: 0;
@@ -94,9 +96,9 @@ header ul
 
 .bordertop:hover
 {
-    border-top: 1px solid blue;
+    border-top: 1px solid #0065FC;
     align-items: center;
-    color: blue;
+    color: #0065FC;
 }
 
 /***** Fin du Header  *****/
@@ -144,7 +146,7 @@ form
 
 .bouton1
 {
-    background-color: blue;
+    background-color: #0065FC;
     border-radius: 0 15px 15px 0;
     border: none;
     color: white;
@@ -221,18 +223,56 @@ form
 {
     display: flex;
     flex-direction: column;
-    margin-right: 60%;
+    justify-content: space-around;
+    margin: 20px 30px 0 0;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    float: left;
+    width: 62%;
+    min-width: 968px;
 }
 
-h2
+.hebergement-article
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 3% 3% 3%;
+}
+
+.hebergement-element
+{
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 15px;
+    margin: 15px 5px 2px 5px;
+    color: black;
+}
+
+.hebergement-element h3, .hebergement-txt, .star
+{
+    margin: auto;
+}
+
+#hebergement
 {
     font-size: 25px;
+    padding: 0 0 0 25px;
 }
 
 .imagebloc1
 {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.afficher
+{
+    padding: 10px 0 10px 25px;
+    color: black;
 }
 
 /***** Fin du premier bloc *****/
@@ -243,17 +283,78 @@ h2
 {
     display: flex;
     flex-direction: column;
-    margin-right: 60%;
+    margin: 20px 0 0 0;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 35%;
+    min-width: 528px;
+    max-height: 720px;
+}
+
+.popular-title
+{
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 25px
+}
+
+#popular
+{
+    font-size: 25px;
+}
+
+.logo-popular
+{
+    width: 20px;
+    height: 20px;
+}
+
+.popular-article
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 5px 2px 5px;
+    margin: 10% 10% 10% 10%;
+    color: black;
+}
+
+.popular-article h3, .popular-txt, .popular-star
+{
+    clear: right;
+}
+
+.popular-element
+{
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 15px;
+    margin: 15px 0 15px 0;
+    padding: 0;
+    color: black;
+    min-width: 382px;
 }
 
 .imagebloc2
 {
-    width: 200px;
-    height: 200px;
+    float: left;
+    width: 170px;
+    height: 130px;
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 /***** Fin du deuxieme bloc *****/
 
+/***** Rassemblement des deux bloc *****/
+
+.left-right-side
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 /***** Le troisieme bloc *****/
 
@@ -266,8 +367,8 @@ h2
 
 .imagebloc3
 {
-    width: 200px;
-    height: 200px;
+    width: small;
+    height: medium;
 }
 
 /***** Fin du troisieme bloc *****/
@@ -283,14 +384,14 @@ footer
     width: 100%;
 }
 
-.piedpage 
+.footer-element 
 {
     display: flex;
     flex-direction: column;
     margin: 0 25% 0 3%;
 }
 
-.espace
+.links-footer
 {
     margin: 0 0 8% 0;
 }
