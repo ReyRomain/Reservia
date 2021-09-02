@@ -5,6 +5,13 @@ html,body
     color: black;
 }
 
+figure {
+    display: block;
+
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
 a
 {
     text-decoration: none;
@@ -42,6 +49,7 @@ a
 body
 {
     margin: 0;
+    min-width: 1634px; /* Après cette taille adapter */
 }
 main
 {
@@ -130,7 +138,7 @@ h1
     padding: 20px;
 }
 
-form
+.form-recherche
 {
     display: flex;
 }
@@ -337,7 +345,7 @@ form
 
 .imagebloc2
 {
-    float: left;
+    float: left; /* Changer le float */
     width: 170px;
     height: 130px;
     margin: 0;
@@ -362,13 +370,103 @@ form
 {
     display: flex;
     flex-direction: column;
-    margin-right: 60%;
 }
+
+.figure-activite
+{
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+figure
+{
+    background-color: #F2F2F2;
+    border-radius: none;
+}
+
+/***** Le bloc de gauche *****/
+
+.bloc-left-activite
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 45%;
+}
+
+/***** Le bloc de droite *****/
+
+.bloc-right-activite
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 45%;
+}
+
+/***** Rassemblement des deux bloc *****/
+
+.left-right-side-activite
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/***** Les images du troisieme bloc *****/
+
+.img-port
+{
+}
+
+.img-pomegues
+{
+}
+
+.img-ile
+{
+}
+
+.img-calanques
+{
+
+}
+
+.img-notredame
+{
+
+}
+
+.img-longchamp
+{
+
+}
+
+/* */
+
+/***** Image de gauche agrandie *****/
+
+.left-fig
+{
+    
+}
+
+/***** Image de droite agrandie *****/ 
+
+.right-fig
+{
+    
+}
+
+/* */
 
 .imagebloc3
 {
-    width: small;
-    height: medium;
+    width: 150px;
+    height: 120px;
 }
 
 /***** Fin du troisieme bloc *****/
@@ -388,7 +486,12 @@ footer
 {
     display: flex;
     flex-direction: column;
-    margin: 0 25% 0 3%;
+    margin: 40px auto auto 50px;
+}
+
+.footer-element:hover
+{
+    color: blue;
 }
 
 .links-footer
