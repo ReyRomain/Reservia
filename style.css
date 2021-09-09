@@ -54,7 +54,7 @@ h3
 body
 {
     margin: 0;
-    min-width: 1634px; /* Après cette taille adapter */
+    width: 100%; /* 1637 Après cette taille adapter */
 }
 main
 {
@@ -121,7 +121,7 @@ header ul
 h1
 {
     margin: 30px 0 20px 0;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 .recherche
@@ -304,6 +304,11 @@ h1
     font-size: 1.2em;
     margin: 2% 0 2% 7%;
     color: black;
+}
+
+.afficher:hover
+{
+    color: #0065FC;
 }
 
 /***** Fin du premier bloc *****/
@@ -555,7 +560,6 @@ footer
     display: flex;
     justify-content: flex-start;
     background-color: rgb(233, 230, 230);
-    height: 250px;
     width: 100%;
 }
 
@@ -580,3 +584,186 @@ footer
 {
     color: black;
 }
+/*******************************************/
+/***** Media Queries 320 - 767 px *****/
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    body {
+        display: block;
+        width: 100%;
+        min-width: none;
+    }
+    
+    .bloc-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 3% 0 3%;
+    }
+
+    .logo-reservia
+    {
+        max-width: 35%;
+    }
+
+    #hebergement {
+        font-size: 1.5em;
+        margin: 2% 0 2% 2%;
+    }
+
+    .hebergement-activite
+    {
+        width: 60%;
+        display: block;
+    }
+
+    h1 {
+        margin: 0 0 0 2%;
+    }
+
+    .txt-recherche {
+        margin: 20px 0 0 2%;
+    }
+
+    /***** Le groupe des filtres *****/
+    
+    .filtre {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 0 0 2%;
+    }
+
+    .filtre h3 {
+        display: flex;
+    }
+
+    .filtre ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info {
+        margin: 10px 0 0 2%;
+    }
+
+    /*********************************/
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .left-right-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /***** Le premier bloc *****/
+
+    .left-side {
+        min-width: 100%;
+        margin: 0;
+        background-color: white;
+    }
+
+    .hebergement-article {
+        display: flex;
+        justify-content: none;
+        width: 95%;
+    }
+
+    .hebergement-element {
+        width: 90%;
+    }
+
+    .afficher {
+        margin: 0 0 0 2%;
+    }
+    /****************************/
+    
+    /***** Le deuxieme bloc *****/
+
+    .right-side {
+        min-width: 100%;
+        margin: 2% 0 0 0;
+    }
+
+    .popular-element {
+        min-width: 100%;
+        margin: 2% 1% 2% 1%;
+    }
+    /****************************/
+    
+    /***** Le troisieme bloc *****/
+
+    #activite {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .figure-bottom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-right-side-activite {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .figure-activite {
+        min-width: 100%;
+        margin: auto;
+        height: auto;
+    }
+
+    /***** Les images *****/
+
+    .img-port {
+        height: 100%;
+        max-height: 150px;
+    }
+    .img-pomegues {
+        height: 100%;
+        max-height: 150px;
+    }
+    .img-ile {
+        height: 100%;
+        max-height: 150px;
+    }
+    .img-calanques {
+        height: 100%;
+        max-height: 150px;
+    }
+    .img-notredame {
+        height: 100%;
+        max-height: 150px;
+    }
+    .img-longchamp {
+        height: 100%;
+        max-height: 150px;
+    }
+
+    /*****************************/
+
+    /***** Le Footer *****/
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 100%;
+    }
+
+}   
