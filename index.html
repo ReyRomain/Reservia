@@ -25,7 +25,7 @@
                         <li class="links-header bordertop hebergement-activite">
                             <a href="#activite" class="links-black">Activités</a>
                         </li>
-                        <li class="links-header fontbold">
+                        <li class="links-header fontbold subscribe">
                             <a href="#" class="color-blue">S'inscrire</a>
                         </li>
                     </ul>
@@ -42,7 +42,12 @@
                             <i class="fas fa-map-marker-alt logo-geo"></i>
                             <form method="post" action="traitement.php" class="form-recherche">
                                 <input type="search" name="recherche" id="recherche" placeholder="Marseille, France" class="fontbold case-recherche" />
-                                <input type="submit" value="Rechercher" class="bouton1" />
+                                <button type="submit" class="bouton1" >
+                                    <span class="span-search">
+                                        Rechercher
+                                    </span>
+                                    <i class="fa fa-search icon-search"></i>
+                                </button>
                             </form>
                         </div>
                     </div>
@@ -51,7 +56,7 @@
                 <section>
                     <div class="filtre">
                     <h3>Filtres</h3>
-                        <ul>
+                        <ul class="filtre-list">
                             <li>
                                 <i class="fas fa-solid fa-money-bill-wave logo-filtre fontbold color-blue"></i>
                                 <p class="txt-filtre"> Economique</p>
@@ -172,7 +177,7 @@
                     <div class="right-side">
                         <div class="popular-title">
                             <h2 id="popular">Les plus populaires</h2>
-                            <p><i class="fas fa-solid fa-chart-line-up logo-popular"></i></p>
+                            <i class="fas fa-chart-line logo-popular"></i>
                         </div>
                         <div class="popular-article">
                             <figure class="popular-element">
@@ -250,7 +255,7 @@
                             </figure>
                         </div>
                         <div class="figure-activite space-img-pom_ile">
-                            <figure class="figure-bottom">
+                            <figure class="figure-bottom fig-pom_ile">
                                 <a href="#">
                                     <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="img-pomegues" />
                                 </a>
@@ -260,7 +265,7 @@
                                     </a>
                                 </figcaption>
                             </figure>
-                            <figure class="figure-bottom">
+                            <figure class="figure-bottom fig-pom_ile">
                                 <a href="#">
                                     <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Ile du Frioul" class="img-ile" />
                                 </a>
@@ -284,7 +289,7 @@
                             </figure>
                         </div>
                         <div class="figure-activite space-img-dame_parc">
-                            <figure class="figure-bottom">
+                            <figure class="figure-bottom fig-dame_parc">
                                 <a href="#">
                                     <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de la garde" class="img-notredame" />
                                 </a>
@@ -294,7 +299,7 @@
                                     </a>
                                 </figcaption>
                             </figure>
-                            <figure class="figure-bottom">
+                            <figure class="figure-bottom fig-dame_parc">
                                 <a href="#">
                                     <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="img-longchamp" />
                                 </a>
