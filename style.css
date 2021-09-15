@@ -30,6 +30,10 @@ h3
     font-size: 1.1em;
 }
 
+.icon-search.fa {
+    display: none;
+}
+
 /***** Les class pour leurs couleurs *****/
 
 .color-grey
@@ -596,14 +600,16 @@ footer
     color: black;
 }
 /*******************************************/
-/***** Media Queries 320 - 767 px *****/
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+
+
+/***** Media Queries 320 - 464 px *****/
+
+@media screen and (min-width: 320px) and (max-width: 464px) {
 
     body {
         display: block;
         width: 100%;
-        min-width: none;
     }
     
     .bloc-page {
@@ -613,22 +619,43 @@ footer
 
     header {
         display: flex;
-        flex-wrap: nowrap;
-        margin: 0 3% 0 3%;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        margin: 0;
     }
 
     .logo-reservia
     {
+        position: absolute;
+        bottom: 30px;
+        left: 3%;
         max-width: 35%;
         max-height: 60px;
-        position: absolute;
-        top: 5px;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 39px;
+    }
+
+    header ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .icon-search.fa {
+        display: block;
     }
 
     .subscribe {
         position: absolute;
-        right: 0px;
-        top: -10px;
+        right: 2px;
+        bottom: 10px;
     }
 
     #hebergement {
@@ -639,14 +666,18 @@ footer
     .hebergement-activite
     {
         display: flex;
-        position: relative;
-        left: 30px;
-        top: 45px;
-        margin: 0 2% 20px 2%;
+        border-bottom: 2px solid grey;
+        width: 100%;
+    }
+
+    .hebergement-activite:hover {
+        border-bottom: 2px solid blue;
+        border-top: none;
+        color: blue;
     }
 
     h1 {
-        margin: 20px 0 0 2%;
+        margin: 50px 0 0 2%;
     }
 
     .txt-recherche {
@@ -662,7 +693,7 @@ footer
     }
 
     .case-recherche {
-        font-size: 1.em;
+        font-size: 1.0em;
         width: 100%;
     }
 
@@ -791,9 +822,503 @@ footer
 
     /***** Les images *****/
 
-    .img-port {
+    .imagebloc3 {
         height: 100%;
         max-height: 150px;
+    }
+
+    /*****************************/
+
+    /***** Le Footer *****/
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 100%;
+    }
+}  
+
+/***** Media Queries 465px - 599px *****/
+
+@media screen and (min-width: 465px) and (max-width: 599px) {
+
+    body {
+        display: block;
+        width: 100%;
+    }
+    
+    .bloc-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+
+    .logo-reservia {
+        position: absolute;
+        bottom: 30px;
+        left: 3%;
+        max-width: 35%;
+        max-height: 60px;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 39px;
+    }
+
+    header ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .icon-search.fa {
+        display: block;
+    }
+
+    .subscribe {
+        position: absolute;
+        right: 2px;
+        bottom: 10px;
+    }
+
+    #hebergement {
+        font-size: 1.5em;
+        margin: 2% 0 2% 2%;
+    }
+
+    .hebergement-activite
+    {
+        display: flex;
+        border-bottom: 2px solid grey;
+        width: 100%;
+    }
+
+    .hebergement-activite:hover {
+        border-bottom: 2px solid blue;
+        border-top: none;
+        color: blue;
+    }
+
+    h1 {
+        margin: 50px 0 0 2%;
+    }
+
+    .txt-recherche {
+        margin: 20px 0 0 2%;
+    }
+
+    .recherche {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 60px;
+        margin: 20px 10px 10px 2%;
+    }
+
+    .case-recherche {
+        font-size: 1.0em;
+        width: 100%;
+    }
+
+    .span-search {
+        display: none;
+    }
+
+    .icon-search {
+        display: block;
+
+    }
+
+    /***** Le groupe des filtres *****/
+    
+    .filtre {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 0 0 2%;
+    }
+
+    .filtre h3 {
+        display: flex;
+    }
+
+    .filtre ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .filtre-list li{
+        margin: 0 10px 0 0;
+    }
+
+    .filtre li {
+        margin-bottom: 5px;
+    }
+    
+    .info {
+        margin: 10px 0 0 2%;
+    }
+
+    /*********************************/
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .left-right-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /***** Le premier bloc *****/
+
+    .left-side {
+        min-width: 100%;
+        order: 2;
+        margin: 0;
+        background-color: white;
+    }
+
+    .hebergement-article {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hebergement-element {
+        width: 70%;
+    }
+
+    .afficher {
+        margin: 0 0 0 2%;
+    }
+    /****************************/
+    
+    /***** Le deuxieme bloc *****/
+
+    .right-side {
+        min-width: 100%;
+        margin: 2% 0 0 0;
+        border-radius: 0;
+    }
+
+    .popular-article {
+        display: flex;
+        align-items: center;
+    }
+
+    .popular-element {
+        margin: 2% 1% 2% 1%;
+        width: 70%;
+    }
+    /****************************/
+    
+    /***** Le troisieme bloc *****/
+
+    .section-bottom {
+        margin: 2%;
+    }
+
+
+    #activite {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .figure-bottom {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 20px 0 20px 5%;
+    }
+
+    .left-right-side-activite {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .figure-activite {
+        min-width: 75%;
+        margin: auto;
+        height: auto;
+    }
+
+    /***** Les images *****/
+
+    .imagebloc3 {
+        height: 100%;
+        max-height: 150px;
+    }
+
+    /*****************************/
+
+    /***** Le Footer *****/
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 100%;
+    }
+
+}  
+
+/***** Media Queries 600px - 767px *****/
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+
+    body {
+        display: block;
+        width: 100%;
+    }
+    
+    .bloc-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+
+    .logo-reservia {
+        position: absolute;
+        bottom: 30px;
+        left: 3%;
+        max-width: 35%;
+        max-height: 60px;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 39px;
+    }
+
+    header ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .icon-search.fa {
+        display: block;
+    }
+
+    .subscribe {
+        position: absolute;
+        right: 2px;
+        bottom: 10px;
+    }
+
+    #hebergement {
+        font-size: 1.5em;
+        margin: 2% 0 2% 2%;
+    }
+
+    .hebergement-activite {
+        display: flex;
+        border-bottom: 2px solid grey;
+        width: 100%;
+    }
+
+    .hebergement-activite:hover {
+        border-bottom: 2px solid blue;
+        border-top: none;
+        color: blue;
+    }
+
+    h1 {
+        margin: 50px 0 0 2%;
+    }
+
+    .txt-recherche {
+        margin: 20px 0 0 2%;
+    }
+
+    .recherche {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 60px;
+        margin: 20px 10px 10px 2%;
+    }
+
+    .case-recherche {
+        font-size: 1.0em;
+        width: 100%;
+    }
+
+    .span-search {
+        display: none;
+    }
+
+    /***** Le groupe des filtres *****/
+    
+    .filtre {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 0 0 2%;
+    }
+
+    .filtre h3 {
+        display: flex;
+    }
+
+    .filtre ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .filtre-list li{
+        margin: 0 10px 0 0;
+    }
+
+    .filtre li {
+        margin-bottom: 5px;
+    }
+    
+    .info {
+        margin: 10px 0 0 2%;
+    }
+
+    /*********************************/
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .left-right-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /***** Le premier bloc *****/
+
+    .left-side {
+        min-width: 100%;
+        order: 2;
+        margin: 0;
+        background-color: white;
+    }
+
+    .hebergement-article {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .hebergement-element {
+        width: 40%;
+        margin: 15px;
+    }
+
+    .afficher {
+        margin: 0 0 0 2%;
+    }
+    /****************************/
+    
+    /***** Le deuxieme bloc *****/
+
+    .right-side {
+        min-width: 100%;
+        margin: 2% 0 0 0;
+        border-radius: 0;
+    }
+
+    .popular-article {
+        display: flex;
+        align-items: center;
+    }
+
+    .popular-element {
+        margin: 2% 1% 2% 1%;
+        width: 65%;
+    }
+
+    .links-flex-popular {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagebloc2 {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    /****************************/
+    
+    /***** Le troisieme bloc *****/
+
+    .section-bottom {
+        margin: 2%;
+    }
+
+
+    #activite {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .figure-bottom {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 10px 0 10px 5%;
+    }
+
+    .left-right-side-activite {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .figure-activite {
+        min-width: 50%;
+        margin: auto;
+    }
+
+    .fig-port_parc {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    /***** Les images *****/
+
+    .img-port {
+        max-height: 385px;
     }
     .img-pomegues {
         height: 100%;
@@ -804,8 +1329,7 @@ footer
         max-height: 150px;
     }
     .img-calanques {
-        height: 100%;
-        max-height: 150px;
+        height: 385px;
     }
     .img-notredame {
         height: 100%;
@@ -829,9 +1353,28 @@ footer
 
 }  
 
-/***** Media Queries 768 - 1023 px *****/
+/***** Media Queries 768 - 999 px *****/
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 999px) {
+    
+    /***** Le groupe des filtres *****/
+
+    .filtre ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 5% 0 0;
+        width: 100%;
+    }
+
+    .filtre li {
+        margin: 0 0 0 15px;
+    }
+
+    .icon-search.fa {
+        display: none;
+    }
+
     .left-right-side {
         display: flex;
         flex-direction: column-reverse;
@@ -841,12 +1384,29 @@ footer
 
     .left-side {
         width: 100%;
-        margin: 25px 0 25px 0;
+        margin: 25px 0 0 0;
+    }
+
+    .left-side h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #hebergement {
+        margin: 2% 0 2% 0;
     }
 
     .hebergement-element {
         width: 45%;
     }
+
+    .afficher {
+        display: flex;
+        justify-content: center;
+        margin: 2% 0 2% 0;
+    }
+
+    /***** Le deuxieme bloc *****/
 
     .right-side {
         display: flex;
@@ -867,86 +1427,282 @@ footer
     }
 
     .popular-element {
+        display: flex;
+        width: 30%;
+        margin: 0;
+    }
+
+    .links-flex-popular {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        margin: 15px 0 15px 0;
     }
 
     .imagebloc2 {
-        width: 250px;
+        width: 100%;
         height: 160px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .column-popular {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
     }
 
     /***** Le troisieme block *****/
 
     .left-right-side-activite {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .section-bottom {
+        margin: 15px 0 5% 0;
+    }
+
+    .section-bottom h2 {
+        display: flex;
+        justify-content: center;
     }
 
     .figure-activite {
-        min-width: 100%;
-        margin: 15px 0 15px 0;
+        min-width: 50%;
+        margin: auto;
         height: auto;
     }
 
+    .figure-bottom {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-bottom: 25px;
+    }
+
+    .fig-port_parc {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
     .fig-pom_ile {
-        width: 47.5%;
+        width: auto;
     }
 
     .fig-dame_parc {
-        width: 47.5%;
+        width: auto;
     }
 
     /***** Les images *****/
 
     .img-port {
-        height: 250px;
+        max-height: 385px;
     }
 
     .img-pomegues {
-        height: 250px;
+        width: 100%;
+        height: 100%;
+        max-height: 165px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
     }
 
     .img-ile {
-        height: 250px;
+        height: 100%;
+        max-height: 150px;
+    }
+
+    .imagebloc3 {
+        object-fit: cover;
     }
 
     .space-img-pom_ile {
         display: flex;
-        flex-direction: row;
-    }
-
-    .img-calanques {
-        height: 250px;
-    }
-
-    .img-notredame {
-        height: 250px;
-    }
-
-    .img-longchamp {
-        height: 250px;
+        flex-direction: column;
     }
 
     .space-img-dame_parc {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 }
 
-/***** Icon de recherche *****/
+/***** Media Queries 1000 - 1173 px *****/
 
-@media screen and (min-width: 768px) and (max-width: 20000px) {
+@media screen and (min-width: 1000px) and (max-width: 1173px) {
+    
     .icon-search.fa {
         display: none;
     }
+
+    .left-right-side {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+
+    .left-side {
+        width: 100%;
+        margin: 25px 0 0 0;
+    }
+
+    .left-side h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #hebergement {
+        margin: 2% 0 2% 0;
+    }
+
+    .hebergement-element {
+        width: 40%;
+    }
+
+    .afficher {
+        display: flex;
+        justify-content: center;
+        margin: 2% 0 2% 0;
+    }
+
+    /***** Le deuxieme bloc *****/
+
+    .right-side {
+        display: flex;
+        margin: 20px 0 0 0;
+        background-color: #F2F2F2;
+        border-radius: 15px;
+        width: 100%;
+        flex-direction: column;;
+    }
+
+    .popular-article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0% 5% 5% 5%;
+        color: black;
+        flex-wrap: wrap;
+    }
+
+    .popular-element {
+        display: flex;
+        width: 30%;
+        margin: 0;
+    }
+    
+    .links-flex-popular {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .imagebloc2 {
+        width: 100%;
+        height: 160px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .column-popular {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+    /***** Le troisieme block *****/
+
+    .left-right-side-activite {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-bottom {
+        margin: 15px 0 5% 0;
+    }
+
+    .section-bottom h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .figure-activite {
+        min-width: 47.5%;
+        margin: auto;
+        height: auto;
+    }
+
+    .figure-bottom {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-bottom: 25px;
+    }
+
+    .fig-port_parc {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .fig-pom_ile {
+        width: auto;
+    }
+
+    .fig-dame_parc {
+        width: auto;
+    }
+
+    /***** Les images *****/
+
+    .imagebloc3 {
+        object-fit: cover;
+    }
+
+    .img-port {
+        max-height: 385px;
+    }
+
+    .img-pomegues {
+        width: 100%;
+        height: 100%;
+        max-height: 165px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .img-ile {
+        height: 100%;
+        max-height: 150px;
+    }
+
+    .space-img-pom_ile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .space-img-dame_parc {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-/***** Responsive img popular *****/
+/***** Media Queries 1925px - 3060px *****/
 
-@media screen and (min-width: 1024px) and (max-width: 1173px) {
+@media screen and (min-width: 1925px) and (max-width: 3060px) {
     .imagebloc2 {
-        height: 172px; /** 100% **/
-    }    
+        width: 200px;
+        height: 150px;
+        margin: 0;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        object-fit: cover;
+    }
+
+    .column-popular {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 0 0 20px;
+    }
 }
