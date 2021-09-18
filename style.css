@@ -660,7 +660,7 @@ footer
 
     #hebergement {
         font-size: 1.5em;
-        margin: 2% 0 2% 2%;
+        margin: 2% 0 2% 8%;
     }
 
     .hebergement-activite
@@ -772,7 +772,7 @@ footer
     }
 
     .afficher {
-        margin: 0 0 0 2%;
+        margin: 0 0 0 8%;
     }
     /****************************/
     
@@ -797,9 +797,7 @@ footer
 
 
     #activite {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        margin-left: 6%;
     }
 
     .figure-bottom {
@@ -895,7 +893,7 @@ footer
 
     #hebergement {
         font-size: 1.5em;
-        margin: 2% 0 2% 2%;
+        margin: 2% 0 2% 17%;
     }
 
     .hebergement-activite
@@ -1007,7 +1005,7 @@ footer
     }
 
     .afficher {
-        margin: 0 0 0 2%;
+        margin: 0 0 0 18.5%;
     }
     /****************************/
     
@@ -1038,9 +1036,7 @@ footer
 
 
     #activite {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        margin-left: 17%;
     }
 
     .figure-bottom {
@@ -1137,7 +1133,7 @@ footer
 
     #hebergement {
         font-size: 1.5em;
-        margin: 2% 0 2% 2%;
+        margin: 2% 0 2% 7%;
     }
 
     .hebergement-activite {
@@ -1245,7 +1241,7 @@ footer
     }
 
     .afficher {
-        margin: 0 0 0 2%;
+        margin: 0 0 0 7%;
     }
     /****************************/
     
@@ -1287,9 +1283,7 @@ footer
 
 
     #activite {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        margin-left: 3%;
     }
 
     .figure-bottom {
@@ -1690,6 +1684,23 @@ footer
 /***** Media Queries 1925px - 3060px *****/
 
 @media screen and (min-width: 1925px) and (max-width: 3060px) {
+    
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*     header {
+        width: 100%;
+        max-width: 1980px;
+    }
+
+    main {
+        width: 100%;
+        max-width: 1980px;
+    }
+    */
+
     .imagebloc2 {
         width: 200px;
         height: 150px;
