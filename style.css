@@ -15,6 +15,7 @@ figure {
 a
 {
     text-decoration: none;
+    color: black;
 }
 ul 
 {
@@ -38,7 +39,7 @@ h3
 
 .color-grey
 {
-    color: grey;
+    color: #F2F2F2;
 }
 
 .color-blue
@@ -61,7 +62,7 @@ h3
 body
 {
     margin: 0;
-    width: 100%; /* 1637 Après cette taille adapter */
+    width: 100%;
 }
 main
 {
@@ -288,7 +289,7 @@ h1
     color: #0065FC;
 }
 
-.hebergement-element h3, p:visited /* non visible sur le p */
+.hebergement-element h3, p:visited
 {
     color: black;
 }
@@ -411,7 +412,7 @@ h1
 
 .column-popular h3, p:visited
 {
-    color: black; /* non visible sur le p */
+    color: black;
 }
 
 .imagebloc2
@@ -666,14 +667,14 @@ footer
     .hebergement-activite
     {
         display: flex;
-        border-bottom: 2px solid grey;
+        border-bottom: 2px solid #F2F2F2;
         width: 100%;
     }
 
     .hebergement-activite:hover {
-        border-bottom: 2px solid blue;
+        border-bottom: 2px solid #0065FC;
         border-top: none;
-        color: blue;
+        color: #0065FC;
     }
 
     h1 {
@@ -899,14 +900,14 @@ footer
     .hebergement-activite
     {
         display: flex;
-        border-bottom: 2px solid grey;
+        border-bottom: 2px solid #F2F2F2;
         width: 100%;
     }
 
     .hebergement-activite:hover {
-        border-bottom: 2px solid blue;
+        border-bottom: 2px solid #0065FC;
         border-top: none;
-        color: blue;
+        color: #0065FC;
     }
 
     h1 {
@@ -1138,14 +1139,14 @@ footer
 
     .hebergement-activite {
         display: flex;
-        border-bottom: 2px solid grey;
+        border-bottom: 2px solid #F2F2F2;
         width: 100%;
     }
 
     .hebergement-activite:hover {
-        border-bottom: 2px solid blue;
+        border-bottom: 2px solid #0065FC;
         border-top: none;
-        color: blue;
+        color: #0065FC;
     }
 
     h1 {
@@ -1362,7 +1363,7 @@ footer
     }
 
     .filtre li {
-        margin: 0 0 0 15px;
+        margin: 0 0 0 5px;
     }
 
     .icon-search.fa {
@@ -1398,6 +1399,10 @@ footer
         display: flex;
         justify-content: center;
         margin: 2% 0 2% 0;
+    }
+
+    .imagebloc1 {
+        height: 165px;
     }
 
     /***** Le deuxieme bloc *****/
@@ -1462,7 +1467,7 @@ footer
     }
 
     .figure-activite {
-        min-width: 50%;
+        min-width: 42.5%;
         margin: auto;
         height: auto;
     }
@@ -1561,6 +1566,10 @@ footer
         margin: 2% 0 2% 0;
     }
 
+    .imagebloc1 {
+        height: 165px;
+    }
+
     /***** Le deuxieme bloc *****/
 
     .right-side {
@@ -1622,7 +1631,7 @@ footer
     }
 
     .figure-activite {
-        min-width: 47.5%;
+        min-width: 45%;
         margin: auto;
         height: auto;
     }
