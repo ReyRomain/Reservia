@@ -1,7 +1,7 @@
 /***** Générale *****/
 html,body
 {
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     color: black;
 }
 
@@ -1690,9 +1690,9 @@ footer
     }
 }
 
-/***** Media Queries 1925px - 3060px *****/
+/***** Media Queries 1925px - 4060px *****/
 
-@media screen and (min-width: 1925px) and (max-width: 3060px) {
+@media screen and (min-width: 1925px) and (max-width: 4060px) {
     
     body {
         display: flex;
