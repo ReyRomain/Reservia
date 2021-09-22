@@ -788,6 +788,14 @@ footer
     .popular-element {
         margin: 2% 1% 2% 1%;
     }
+
+    .imagebloc2 {
+        width: 130px;
+    }
+
+    .column-popular {
+        padding-left: 5px;
+    }
     /****************************/
     
     /***** Le troisieme bloc *****/
@@ -1002,7 +1010,11 @@ footer
     }
 
     .hebergement-element {
-        width: 70%;
+        width: 80%;
+    }
+
+    .imagebloc1 {
+        height: 150px;
     }
 
     .afficher {
@@ -1025,7 +1037,16 @@ footer
 
     .popular-element {
         margin: 2% 1% 2% 1%;
-        width: 70%;
+        width: 85%;
+    }
+
+    .imagebloc2 {
+        width: 150px;
+        height: 130px;
+    }
+
+    .column-popular {
+        padding-left: 20px;
     }
     /****************************/
     
@@ -1053,7 +1074,7 @@ footer
     }
 
     .figure-activite {
-        min-width: 75%;
+        min-width: 85%;
         margin: auto;
         height: auto;
     }
@@ -1261,7 +1282,7 @@ footer
 
     .popular-element {
         margin: 2% 1% 2% 1%;
-        width: 65%;
+        width: 75%;
     }
 
     .links-flex-popular {
@@ -1271,6 +1292,7 @@ footer
 
     .imagebloc2 {
         width: 100%;
+        height: 160px;
         border-radius: 15px 15px 0 0;
     }
 
@@ -1366,10 +1388,6 @@ footer
         margin: 0 0 0 5px;
     }
 
-    .animaux {
-        width: 181px; /**** filtre li margin:auto ****/
-    }
-
     .icon-search.fa {
         display: none;
     }
@@ -1406,7 +1424,7 @@ footer
     }
 
     .imagebloc1 {
-        height: 165px;
+        height: 175px;
     }
 
     /***** Le deuxieme bloc *****/
