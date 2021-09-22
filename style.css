@@ -1366,6 +1366,10 @@ footer
         margin: 0 0 0 5px;
     }
 
+    .animaux {
+        width: 181px; /**** filtre li margin:auto ****/
+    }
+
     .icon-search.fa {
         display: none;
     }
