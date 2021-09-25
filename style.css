@@ -12,6 +12,10 @@ figure {
     margin-inline-end: 0;
 }
 
+nav {
+    display: flex;
+}
+
 a
 {
     text-decoration: none;
@@ -23,6 +27,11 @@ ul
 }
 .fontbold
 {
+    font-weight: bold;
+}
+
+.filtre p {
+    font-size: 1em;
     font-weight: bold;
 }
 
@@ -96,7 +105,7 @@ header
     margin: 0 3% 0 3%;
 }
 
-header ul
+header nav
 {
     list-style-type: none;
     display: flex;
@@ -664,6 +673,10 @@ footer
         margin: 2% 0 2% 8%;
     }
 
+    .links-header {
+        margin-top: 40px;
+    }
+
     .hebergement-activite
     {
         display: flex;
@@ -716,7 +729,7 @@ footer
         margin: 0 0 0 2%;
     }
 
-    .filtre h3 {
+    .filtre p {
         display: flex;
     }
 
@@ -905,6 +918,10 @@ footer
         margin: 2% 0 2% 17%;
     }
 
+    .links-header {
+        margin-top: 40px;
+    }
+
     .hebergement-activite
     {
         display: flex;
@@ -957,7 +974,7 @@ footer
         margin: 0 0 0 2%;
     }
 
-    .filtre h3 {
+    .filtre p {
         display: flex;
     }
 
@@ -1158,6 +1175,10 @@ footer
         margin: 2% 0 2% 7%;
     }
 
+    .links-header {
+        margin-top: 40px;
+    }
+
     .hebergement-activite {
         display: flex;
         border-bottom: 2px solid #F2F2F2;
@@ -1204,7 +1225,7 @@ footer
         margin: 0 0 0 2%;
     }
 
-    .filtre h3 {
+    .filtre p {
         display: flex;
     }
 
@@ -1552,7 +1573,7 @@ footer
 /***** Media Queries 1000 - 1173 px *****/
 
 @media screen and (min-width: 1000px) and (max-width: 1173px) {
-    
+
     .icon-search.fa {
         display: none;
     }
